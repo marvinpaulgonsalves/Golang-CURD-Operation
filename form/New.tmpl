@@ -1,0 +1,12 @@
+{{ define "New" }}
+  {{ template "Header" }}
+    {{ template "Menu" }} 
+   <h2>New Employee Details</h2>  
+    <form method="POST" action="insert">
+      <label> Name </label><input type="text" name="name" /><br />
+      <label> Role </label><input type="text" name="role" /><br />
+      <label> Salary </label><input type="text" name="salary" /><br />
+      <label> City </label><input type="text" name="city" /><br />
+      <input type="submit" value="Save user" />
+    </form>
+{{ end }}
